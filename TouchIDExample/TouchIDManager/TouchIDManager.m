@@ -56,7 +56,7 @@
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         OSStatus status = SecItemAdd((__bridge CFDictionaryRef)attributes, nil);
         
-        NSString *message = [NSString stringWithFormat:@"储存结果: %d", status];
+        NSString *message = [NSString stringWithFormat:@"储存结果: %@", [self keyChainErrorToString: status]];
         
         [self showAlertControllerWithMessage:message];
     });
@@ -159,5 +159,8 @@
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"提示" message:msg preferredStyle:UIAlertControllerStyleAlert];
     [[[[UIApplication sharedApplication] delegate] window].rootViewController presentViewController:alert animated:YES completion:nil];
     
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [alert dismissViewControllerAnimated:YES completion:nil];
+    });
 }
 @end

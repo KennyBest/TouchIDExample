@@ -32,14 +32,23 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XL3-eR-7z8">
                                         <rect key="frame" x="0.0" y="40" width="359" height="30"/>
                                         <state key="normal" title="新建密码"/>
+                                        <connections>
+                                            <action selector="toggleCreateNewPassword:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gEk-ev-jOf"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6pw-wY-j4e">
                                         <rect key="frame" x="0.0" y="80" width="359" height="30"/>
                                         <state key="normal" title="更新密码"/>
+                                        <connections>
+                                            <action selector="toggleUpdateExistedPassword:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TSn-Gi-amG"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WSy-TQ-wLX">
                                         <rect key="frame" x="0.0" y="120" width="359" height="30"/>
                                         <state key="normal" title="删除密码"/>
+                                        <connections>
+                                            <action selector="toggleDeleteExistedPassword:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SuX-vr-IVp"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>

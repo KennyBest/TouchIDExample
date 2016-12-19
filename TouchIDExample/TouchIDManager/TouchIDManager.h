@@ -20,6 +20,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (void)evaluatePolicy:(LAPolicy) policy localizedReason:(NSString * )localizedReason reply:(void(^)(BOOL success, NSError * __nullable error))reply;
 
++ (void)setKeyChainValue:(NSString *)value forKey:(NSString *)key;
+
++ (void)fetchValueWithKey:(NSString *)key useOperationPrompt:(NSString *)prompt completionBlock:(void(^)(NSString *value, NSError *error))block ;
+
++ (void)updateItemNewValue:(NSString *)newValue forKey:(NSString *)key opertaionPrompt:(NSString *)prompt ;
+
++ (void)deleteItemAsyncWithKey:(NSString *)key ;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "TouchIDManager.h"
+#import "OnlyAuthorizationViewController.h"
 
 @interface ViewController ()
 
@@ -18,6 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
 }
 
 
@@ -25,6 +27,19 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+
+}
+
 
 - (IBAction)checkTouchId:(id)sender {
     
@@ -39,5 +54,11 @@
     }
     
 }
+
+/**
+ 支付宝登录时使用touchId验证
+ 猜想： 使用touchId仅验证身份
+ */
+
 
 @end

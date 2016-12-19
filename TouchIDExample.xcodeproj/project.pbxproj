@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B9627D501E0811330065F193 /* OnlyAuthorizationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9627D4F1E0811330065F193 /* OnlyAuthorizationViewController.m */; };
 		B9944A461E06B733002ED31D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9944A451E06B733002ED31D /* main.m */; };
 		B9944A491E06B733002ED31D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9944A481E06B733002ED31D /* AppDelegate.m */; };
 		B9944A4C1E06B733002ED31D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9944A4B1E06B733002ED31D /* ViewController.m */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B9627D4E1E0811330065F193 /* OnlyAuthorizationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnlyAuthorizationViewController.h; sourceTree = "<group>"; };
+		B9627D4F1E0811330065F193 /* OnlyAuthorizationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnlyAuthorizationViewController.m; sourceTree = "<group>"; };
 		B9944A411E06B733002ED31D /* TouchIDExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchIDExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9944A451E06B733002ED31D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B9944A471E06B733002ED31D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -66,6 +69,8 @@
 				B9944A481E06B733002ED31D /* AppDelegate.m */,
 				B9944A4A1E06B733002ED31D /* ViewController.h */,
 				B9944A4B1E06B733002ED31D /* ViewController.m */,
+				B9627D4E1E0811330065F193 /* OnlyAuthorizationViewController.h */,
+				B9627D4F1E0811330065F193 /* OnlyAuthorizationViewController.m */,
 				B9944A4D1E06B733002ED31D /* Main.storyboard */,
 				B9944A501E06B733002ED31D /* Assets.xcassets */,
 				B9944A521E06B733002ED31D /* LaunchScreen.storyboard */,
@@ -168,6 +173,7 @@
 				B9944A491E06B733002ED31D /* AppDelegate.m in Sources */,
 				B9944A5E1E06B771002ED31D /* TouchIDManager.m in Sources */,
 				B9944A461E06B733002ED31D /* main.m in Sources */,
+				B9627D501E0811330065F193 /* OnlyAuthorizationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +332,7 @@
 				B9944A5A1E06B733002ED31D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+@import UIKit;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -14,10 +15,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TouchIDManager : NSObject
 
-- (BOOL)canEvaluatePolicy:(LAPolicy)policy failureBlock:(nullable void(^)(NSError* __nullable error))block;
++ (BOOL)canEvaluatePolicy:(LAPolicy)policy failureBlock:(nullable void(^)(NSError* __nullable error))block;
 
 
-- (void)evaluatePolicy:(LAPolicy) policy localizedReason:(NSString * )localizedReason reply:(void(^)(BOOL success, NSError * __nullable error))reply;
++ (void)evaluatePolicy:(LAPolicy) policy localizedReason:(NSString * )localizedReason reply:(void(^)(BOOL success, NSError * __nullable error))reply;
 
 @end
 

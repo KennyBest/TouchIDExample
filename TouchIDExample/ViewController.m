@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "TouchIDManager.h"
 
 @interface ViewController ()
 
@@ -25,5 +26,18 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)checkTouchId:(id)sender {
+    
+    BOOL result = [TouchIDManager canEvaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics failureBlock:^(NSError *error){
+        
+    }];
+    
+    if (result) {
+        [TouchIDManager evaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics localizedReason:@"使用指纹识别" reply:^(BOOL success, NSError * _Nullable error) {
+            NSLog(@"%d, %@",success, error);
+        }];
+    }
+    
+}
 
 @end
